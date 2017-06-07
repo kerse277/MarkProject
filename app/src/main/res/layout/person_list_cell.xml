@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cellRl"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/imgStatus"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/izlevel3" />
+
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imgProfile"
+            android:background="@drawable/image_border"
+            android:layout_margin="8dp"
+            android:layout_alignBottom="@+id/imgStatus"
+            android:layout_alignLeft="@+id/imgStatus"
+            android:layout_alignRight="@+id/imgStatus"
+            android:layout_alignTop="@+id/imgStatus"
+            android:padding="2dp"
+            android:src="@mipmap/ic_launcher_round"
+            />
+        <TextView
+            android:id="@+id/tvNameAndSurname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgStatus"
+            android:layout_centerHorizontal="true"
+            android:text="Emre Kaplan"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.kerse.markproject.activity.RegisterActivity"
+    android:padding="20dp">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"/>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:layout_below="@+id/logo"
+        android:id="@+id/tilFirstName">
+        <EditText android:id="@+id/etFirstName"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:hint="First Name" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilFirstName"
+        android:id="@+id/tilLastName">
+        <EditText android:id="@+id/etLastName"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textCapWords"
+            android:hint="Last Name" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilLastName"
+        android:id="@+id/tilEmail">
+        <EditText android:id="@+id/etEmail"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:hint="Email" />
+    </android.support.design.widget.TextInputLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tilEmail"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/passwordLyt">
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilPassword"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toStartOf="@+id/imageView">
+            <EditText android:id="@+id/etPassword"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:hint="Password" />
+
+        </android.support.design.widget.TextInputLayout>
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/visible"
+            android:onClick="visiblePass"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordLyt">
+
+        <me.himanshusoni.edittextspinner.EditTextSpinner
+            android:id="@+id/editText"
+            android:textColor="#FFF"
+            android:textColorHint="#FFF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Gender"
+            android:singleLine="true"
+            android:inputType="textPersonName" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_border"
+        android:text="Register"
+        android:onClick="register"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tilGender"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#FFF"
+        android:id="@+id/btRegister" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already a member? Login"
+        android:textColor="#FFF"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/btRegister"
+        android:paddingTop="10dp"
+        android:onClick="toLogin"
+        android:paddingBottom="10dp"
+        android:layout_marginTop="18dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/toLogin" />
+
+    <ProgressBar
+        android:id="@+id/loginProgress"
+        android:padding="5dp"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btLogin"
+        android:layout_alignBottom="@+id/btLogin"
+        android:layout_centerHorizontal="true"
+        android:elevation="5dp"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/registerProgress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btRegister"
+        android:layout_alignBottom="@+id/btRegister"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
