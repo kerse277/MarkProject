@@ -29,7 +29,8 @@
             android:value="AIzaSyD_sYoYOxtb8X6176HqDcOY6HO8Fr1aymY" />
 
         <activity android:name=".activity.ProfileActivity" />
-        <activity android:name=".activity.ProfileSettingsActivity"></activity>
+        <activity android:name=".activity.ProfileSettingsActivity" />
+        <activity android:name=".activity.CollectionActivity"></activity>
     </application>
 
 </manifest>

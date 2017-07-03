@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <string-array name="mark_names_EN">
+            <item>Lord of the Numbers</item>
+            <item>Crazy Kite</item>
+            <item>Fun Enthusiast</item>
+            <item>Underwater Explorer</item>
+            <item>Velvet Artist</item>
+            <item>Baker\'s Shovel</item>
+            <item>Drunkard</item>
+            <item>Beautiful Unicorn</item>
+            <item>Book Worm</item>
+            <item>Passenger</item>
+            <item>Caramel Macchiato</item>
+            <item>Car Love</item>
+            <item>Journeymen</item>
+            <item>Jesus Christ</item>
+            <item>City Mayor</item>
+            <item>Ornate</item>
+            <item>Tooth Friendly</item>
+            <item>Healer</item>
+            <item>Technology enthusiast</item>
+            <item>Ambassador</item>
+            <item>Fireman</item>
+            <item>Technology enthusiast</item>---
+            <item>Gourmet</item>
+            <item>The Oiler</item>
+            <item>Steroid</item>
+            <item>Tradespeople</item>
+            <item>Plump hair</item>
+            <item>Richie Rich</item>
+        </string-array>
+</resources>

@@ -463,7 +463,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
             super.onPostExecute(aVoid);
             for (Mark mark : marks) {
                 LatLng markLocation = new LatLng(Double.parseDouble(mark.getLatitude()), Double.parseDouble(mark.getLongitude()));
-                gMap.addMarker(new MarkerOptions().position(markLocation).icon(BitmapDescriptorFactory.fromResource(Config.getMarkIcons().get(mark.getPlaceType()))).snippet(mark.getUniqueID()));
+                gMap.addMarker(new MarkerOptions().position(markLocation).icon(BitmapDescriptorFactory.fromResource(Config.getMarkIcons().get(mark.getPlaceType()).getMarkpath())).snippet(mark.getUniqueID()));
 
 
             }

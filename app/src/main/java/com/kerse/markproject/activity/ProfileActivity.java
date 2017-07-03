@@ -32,7 +32,7 @@ public class ProfileActivity extends AppCompatActivity {
     RelativeLayout RLPop;
     int pop;
     CustomPerson person;
-    ImageView imgSettings;
+    ImageView imgSettings,imgCollection;
     Button sendMessage;
     String Uid;
     boolean msgPer;
@@ -46,14 +46,19 @@ public class ProfileActivity extends AppCompatActivity {
         tvWork = (TextView) findViewById(R.id.tvwork);
         RLPop = (RelativeLayout) findViewById(R.id.RL);
         imgSettings = (ImageView) findViewById(R.id.imgSettings);
+        imgCollection=(ImageView) findViewById(R.id.imgCollection);
         sendMessage=(Button)findViewById(R.id.sendmessage);
         sendMessage.setVisibility(View.INVISIBLE);
+        imgCollection.setVisibility(View.INVISIBLE);
         if (getIntent().getStringExtra("Uid") != null) {
             Uid = getIntent().getStringExtra("Uid");
             msgPer = getIntent().getBooleanExtra("msgPer", false);
             imgSettings.setVisibility(View.INVISIBLE);
             if(msgPer==true)
                 sendMessage.setVisibility(View.VISIBLE);
+        }
+        else{
+            imgCollection.setVisibility(View.VISIBLE);
         }
 
 
@@ -67,8 +72,15 @@ public class ProfileActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
 
+        imgCollection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(), CollectionActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 
     public class asycTaskToLoadProfileActivity extends AsyncTask<Void, Void, Void> {
 

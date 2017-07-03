@@ -85,6 +85,10 @@ public class Person
 
     @Getter
     @Setter
+    private List<String> collectedCollection = new ArrayList<>();
+
+    @Getter
+    @Setter
     private List<String>  collectedPersonMessageStatus = new ArrayList<>();
 
     @Getter

@@ -2,14 +2,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.kerse.markproject.fragment.MarkFragment">
-
+    tools:context="com.kerse.markproject.fragment.CollectedCollectionFragment"
+    android:background="@drawable/patternuzun">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/collectedPersonList"
+        android:id="@+id/collectedCollection"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/patternuzun"/>
-
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>

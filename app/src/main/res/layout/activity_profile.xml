@@ -31,10 +31,17 @@
             android:background="@drawable/button_mark_back"
             android:src="@mipmap/ic_launcher_round"/>
         <ImageView
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_settings_white_36dp"
+            android:src="@drawable/collection"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:id="@+id/imgCollection"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_settings_white_48dp"
             android:layout_alignParentRight="true"
             android:padding="5dp"
             android:id="@+id/imgSettings"/>

@@ -46,11 +46,11 @@ dependencies {
     })
 
     //LOMBOK
-    
+
 
     //REST SERVICE
-    
-    
+
+
     //GOOGLE MAP
     //compile 'com.google.android.gms:play-services-maps:9.0.1'
 

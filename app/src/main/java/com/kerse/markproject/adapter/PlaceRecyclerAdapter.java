@@ -65,7 +65,7 @@ public class PlaceRecyclerAdapter extends RecyclerView.Adapter<PlaceRecyclerAdap
         int icon = 0;
         for (String type : itemList.get(position).getPlaceType()) {
             if (Config.getPlaces().contains(type)) {
-                icon = Config.getMarkIcons().get(type);
+                icon = Config.getMarkIcons().get(type).getMarkpath();
             }
         }
         if (icon != 0)
