@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cell"
+        android:padding="4dp">
+
+        <ImageView
+            android:id="@+id/imgMark"
+            android:layout_centerHorizontal="true"
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:src="@drawable/empty_mark" />
+
+        <TextView
+            android:id="@+id/tvMarkDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgMark"
+            android:layout_centerHorizontal="true"
+            android:text="Empty"
+            android:textAlignment="center"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
